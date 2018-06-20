@@ -12,9 +12,9 @@ WARNING 2: Don't forget to define before (in your main script) the folder in whi
 @author: A.P
 """
 import os ; import subprocess ; 
-def checkasc(m,n):     
-        cmd = path + "\edf2asc.exe" ## path and call of edf2asc.exe 
-        os.chdir(pathfolder+filename ) ## folder + file path - type str
+def checkasc(path,pathfolder,filename):     
+        cmd = path + "edf2asc.exe" ## path and call of edf2asc.exe 
+        os.chdir(pathfolder+filename) ## folder + file path - type str
         dir1 = os.path.dirname(pathfolder+filename) ## file path - type str
         for root,dirs,files in os.walk(dir1):
            for file in sorted(files):
